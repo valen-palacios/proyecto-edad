@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Las Tablas De Valen</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <center>
+        <h1> Conoce si lo puedes comprar o No</h1>
+    </center>
+
+    <input type="number" id="edad">
+    <button onclick="procesarEdad()" class="botonCalcularLaEdad">Ver</button>
+    <p id="resultado"></p>
+
+    <script>
+        function procesarEdad() {
+            var edad = document.getElementById("edad").value;
+            var mensaje = "";
+            if (edad == "" || edad == null) {
+                alert("Ingresa la edad ");
+            } else {
+                console.log("Esta es la variable edad" + edad)
+                if (edad >= 18) {
+                    mensaje = "Puedes comprar alcohol ya que tu edad es: " + edad
+                } else {
+                    alert("No puedes comprar alcohol ya que tu edad es: " + edad);
+                }
+                document.getElementById("resultado").innerHTML = mensaje;
+            }
+        }
+    </script>
+</body>
+
+</html>

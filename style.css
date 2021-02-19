@@ -1,0 +1,38 @@
+body {
+    background: #f0ff1c;
+}
+
+h1 {
+    color: #051eff
+}
+
+.botonCalcularLaEdad {
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #ffffff;
+    background-color: #0011ff;
+    border-radius: 15px;
+    border: 3px double #bec8ff;
+}
+
+.botonCalcularLaEdad:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+input {
+    border-radius: 5px;
+    background-color: #def;
+}
+
+p {
+    color: #536dff;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
